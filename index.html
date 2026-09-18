@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SteamPulse</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="brand">
+            <span class="brand-name">SteamPulse</span>
+            <span class="brand-tag">steam market pulse</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="intro">
+        <h1>What is everyone playing on Steam right now?</h1>
+        <p>
+            This shows which genres people are playing, live player counts, and
+            coming soon games ranked by demand and saves your watchlist. No sign-in or API key needed.
+        </p>
+    </section>
+
+    <section class="status hidden" id="status">
+        <div class="spinner" id="spinner"></div>
+        <span id="statusMsg"></span>
+    </section>
+
+    <section class="hidden" id="trendSection">
+        <div class="section-head">
+            <h2>🌃 Genre pulse</h2>
+            <span class="muted" id="trendMeta"></span>
+        </div>
+        <div class="card">
+            <div id="trendBars"></div>
+        </div>
+    </section>
+
+    <section class="hidden" id="liveSection">
+        <div class="section-head">
+            <h2>Who's online now</h2>
+            <span class="muted" id="liveMeta"></span>
+        </div>
+        <div class="tracker-add">
+            <input type="text" id="trackAppId" autocomplete="off" placeholder="Add a game by App ID, e.g. 1245620">
+            <input type="text" id="trackNote" autocomplete="off" placeholder="note (optional)">
+            <button class="btn btn-ghost" id="trackBtn" type="button">Add</button>
+        </div>
+        <div id="trackerGrid" class="tracker-grid"></div>
+    </section>
+
+    <section class="hidden" id="comingSection">
+        <div class="section-head">
+            <h2>Coming soon by demand</h2>
+            <span class="muted" id="comingMeta"></span>
+        </div>
+        <div id="comingGrid" class="coming-grid"></div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Personal project using Steam's public data. Not affiliated with Valve EVEN THO I WISH. The scores are just rough guesses.</p>
+</footer>
+
+</body>
+</html>

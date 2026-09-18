@@ -1,0 +1,23 @@
+[
+  {
+    "appid": "3219630",
+    "name": "Halloween: The Game",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219630/153ed105c4b409fe689783e4f9b6aad72c152646/header.jpg?t=1789572547",
+    "note": "9/18/2026",
+    "createdAt": 1789746410170
+  },
+  {
+    "appid": "3405340",
+    "name": "Megabonk",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/d06cb39a82a703e42541085fc61b42d80904b3f8/header.jpg?t=1760445338",
+    "note": "i was just playing this game !",
+    "createdAt": 1789749028665
+  },
+  {
+    "appid": "1808500",
+    "name": "ARC Raiders",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/b1379225bf8d50a4b4ad26aad2c637278222a20c/header_alt_assets_7.jpg?t=1789143012",
+    "note": "",
+    "createdAt": 1789749124192
+  }
+]

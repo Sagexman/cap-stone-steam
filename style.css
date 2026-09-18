@@ -1,0 +1,398 @@
+ plain styles for SteamPulse
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.topbar {
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    padding: 12px 20px;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.brand-tag {
+    color: #8b949e;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.intro p {
+    color: #8b949e;
+    margin-top: 0;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.muted {
+    color: #8b949e;
+    font-size: 14px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #58a6ff;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.section-head h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    color: #c9d1d9;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+.btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #30363d;
+    background: #21262d;
+    color: #c9d1d9;
+}
+
+.btn:hover {
+    background: #30363d;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #30363d;
+    border-top: 3px solid #58a6ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+ genre trend bars 
+
+.trend-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.trend-name {
+    width: 120px;
+    font-size: 14px;
+    text-align: right;
+    color: #c9d1d9;
+}
+
+.trend-track {
+    flex: 1;
+    height: 14px;
+    background: #0d1117;
+    border-radius: 4px;
+}
+
+.trend-fill {
+    height: 100%;
+    background: #58a6ff;
+    border-radius: 4px;
+}
+
+.trend-pct {
+    width: 50px;
+    text-align: right;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+watchlist wit live tracker 
+
+.tracker-add {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    max-width: 700px;
+}
+
+.tracker-add input {
+    flex: 1;
+    min-width: 170px;
+}
+
+.tracker-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 700px) {
+    .tracker-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tracker-card {
+    position: relative;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tracker-remove {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tracker-remove:hover {
+    color: #ffffff;
+    border-color: #f85149;
+}
+
+.tracker-img {
+    width: 100%;
+    display: block;
+    background: #0d1117;
+}
+
+.tracker-body {
+    padding: 12px;
+}
+
+.tracker-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tracker-name a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tracker-name a:hover {
+    color: #58a6ff;
+}
+
+.tracker-count {
+    font-size: 30px;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+.tracker-sub {
+    font-size: 12px;
+    color: #8b949e;
+    text-transform: uppercase;
+}
+
+.pulse-spark {
+    margin-top: 10px;
+}
+
+.spark {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.spark polyline {
+    fill: none;
+    stroke: #58a6ff;
+    stroke-width: 2;
+}
+
+.tracker-pred {
+    font-size: 13px;
+    color: #8b949e;
+    margin-top: 6px;
+}
+
+.tracker-pred.has {
+    color: #3fb950;
+}
+
+.tracker-note {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* coming soon */
+
+.coming-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 700px) {
+    .coming-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coming-card {
+    position: relative;
+    display: block;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #c9d1d9;
+}
+
+.coming-card:hover {
+    border-color: #58a6ff;
+}
+
+.coming-rank {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+    background: rgba(13, 17, 23, 0.9);
+    border: 1px solid #58a6ff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-img {
+    width: 100%;
+    display: block;
+    background: #0d1117;
+}
+
+.coming-body {
+    padding: 12px;
+}
+
+.coming-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.coming-meta {
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 10px;
+}
+
+.coming-track {
+    height: 10px;
+    background: #0d1117;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.coming-fill {
+    height: 100%;
+    background: #58a6ff;
+    border-radius: 4px;
+}
+
+.coming-why {
+    font-size: 13px;
+}
+
+.footer {
+    border-top: 1px solid #30363d;
+    padding: 16px 20px;
+    text-align: center;
+    color: #8b949e;
+    font-size: 13px;
+}
