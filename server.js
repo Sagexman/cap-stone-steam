@@ -23,7 +23,7 @@ async function cached(key, ttl, load) {
 async function getSteamData(url) {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Steam said " + response.status);
-    return response.json();
+    return response.json();  
 }
 
 // --- Steam data ---
